@@ -11,3 +11,6 @@ export function LogIn() {
     const navigate = useNavigate();
 
     const LogInUser = () => {
+        if(email.length === 0) {
+            alert("Email has left Blank!");
+        }
