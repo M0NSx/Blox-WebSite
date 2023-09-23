@@ -9,3 +9,5 @@ export function LogIn() {
     const [password, setPassword] = useState('');
 
     const navigate = useNavigate();
+
+    const LogInUser = () => {
