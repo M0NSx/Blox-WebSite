@@ -17,3 +17,8 @@ export function LogIn() {
         else if(password.length === 0) {
             alert("Password has left Blank!");
         }
+        else{
+            axios.post('http://127.0.0.1:5000/LogIn', {
+                email: email,
+                password: password
+            })
