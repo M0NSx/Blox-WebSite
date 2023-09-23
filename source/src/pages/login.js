@@ -22,3 +22,7 @@ export function LogIn() {
                 email: email,
                 password: password
             })
+            .then(function (response) {
+                    console.log(response);
+                navigate("/dashboard");
+            })
