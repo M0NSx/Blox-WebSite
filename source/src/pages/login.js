@@ -48,3 +48,10 @@ export function LogIn() {
                         <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="nickname" required />
                         <label>Nickname:</label>
                     </div>
+                    <div className={Style.input_box}>
+                        <span className={Style.icon}>
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="Password" value={password} onChange={(e) => setPassword(e.target.value)} name="password" required />
+                        <label>Password:</label>
+                    </div>
