@@ -34,3 +34,17 @@ export function LogIn() {
             });
         }
     }
+
+    return (
+        <>
+        <section className={Style.section}>
+            <div className={Style.login_box}>
+                <form>
+                    <h2>Login</h2>
+                    <div className={Style.input_box}>
+                        <span className={Style.icon}>
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="nickname" required />
+                        <label>Nickname:</label>
+                    </div>
