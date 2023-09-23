@@ -26,3 +26,11 @@ export function LogIn() {
                     console.log(response);
                 navigate("/dashboard");
             })
+            .catch(function (error) {
+                console.log(error, 'error');
+                if (error.response.status === 401) {
+                    alert("Invalid Credentials");
+                }
+            });
+        }
+    }
