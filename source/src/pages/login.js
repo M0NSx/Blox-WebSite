@@ -55,3 +55,7 @@ export function LogIn() {
                         <input type="Password" value={password} onChange={(e) => setPassword(e.target.value)} name="password" required />
                         <label>Password:</label>
                     </div>
+                    <button className={Style.log_button} type="button" onClick={LogInUser}>Login</button>
+                    <div className={Style.register_link}>
+                        <p className={Style.dont_acc}>Dont have an account? <Link className="to_register" to='/CreateAccount'>Register</Link></p>
+                    </div>
