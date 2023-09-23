@@ -14,3 +14,6 @@ export function LogIn() {
         if(email.length === 0) {
             alert("Email has left Blank!");
         }
+        else if(password.length === 0) {
+            alert("Password has left Blank!");
+        }
