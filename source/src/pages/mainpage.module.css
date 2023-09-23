@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+li, a, button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li .link {
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+}
+
+.nav_links li .link:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+.login {
+    border: 2px solid #0088a9;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: .25s;
+}
+
+.login:hover {
+    background-color: #0088a9;
+}
+
+.createacc:hover {
+    background-color: #005469;
+    border: 2px solid #005469;
+}
+
+.createacc {
+    border: 2px solid #0088a9;
+    background-color: #0088a9;
+    border-radius: 5px;
+    margin-left: 20px;
+    transition: .25s;
+}
+
+/* Content */
+.content {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.content h1 {
+    font-size: 90px; /* pattern of 160px (with text as Blox Fruits) */
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+/* Background Video */
+.back_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back_video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back_video{
+        width: auto;
+        height: 100%;
+    }
+}
