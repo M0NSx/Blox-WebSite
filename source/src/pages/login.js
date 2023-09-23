@@ -59,3 +59,15 @@ export function LogIn() {
                     <div className={Style.register_link}>
                         <p className={Style.dont_acc}>Dont have an account? <Link className="to_register" to='/CreateAccount'>Register</Link></p>
                     </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </>
+    )
+}
+
+export default LogIn;
