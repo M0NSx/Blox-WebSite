@@ -4,3 +4,5 @@ import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 
 export function LogIn() {
+
+    const [email, setEmail] = useState('');
