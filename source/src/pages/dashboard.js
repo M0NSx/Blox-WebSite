@@ -21,3 +21,7 @@ export function Dashboard() {
                         <i className="bi bi-gear"></i>
                     </Link>
                     <Link className={Style.config_links} to="/">
+                        <i className="bi bi-translate"></i>
+                    </Link>
+                </div>
+            </section>
