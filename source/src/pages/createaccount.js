@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import Style from './CreateAccount.module.css'
+import Style from './createaccount.module.css'
 import React, { useState } from "react";
 import axios from 'axios';
 
@@ -16,13 +16,15 @@ export function CreateAccount() {
                 password: password
             })
             .then(function (response) {
-                console.log(response);
+                    console.log(response);
                 navigate('/LogIn')
             })
             .catch(function (error) {
-                console.log(error, 'error');
+                console.log(error);
                 if (error.response.status === 401) {
                     alert("Invalid Credentials");
+                } else {
+                    alert("An error occurred while creating the account");
                 }
             });
     };
@@ -32,7 +34,7 @@ export function CreateAccount() {
         <section className={Style.section}>
             <div className={Style.login_box}>
                 <form>
-                    <h2>Create Account</h2>
+                    <h2 id={Style.create_title}>Create Account</h2>
                     <div className={Style.input_box}>
                         <span className={Style.icon}>
                             <ion-icon name="mail"></ion-icon>
@@ -55,8 +57,6 @@ export function CreateAccount() {
             </div>
         </section>
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </>
     )
 }
