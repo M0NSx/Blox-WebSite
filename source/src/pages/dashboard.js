@@ -20,3 +20,4 @@ export function Dashboard() {
                     <Link className={Style.config_links} to="/">
                         <i className="bi bi-gear"></i>
                     </Link>
+                    <Link className={Style.config_links} to="/">
