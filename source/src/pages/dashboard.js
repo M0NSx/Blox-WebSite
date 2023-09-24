@@ -4,3 +4,6 @@ import ProfileImage from "../img/Site-logo.png";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export function Dashboard() {
+    return (
+        <>
+        <aside className={Style.header}>
