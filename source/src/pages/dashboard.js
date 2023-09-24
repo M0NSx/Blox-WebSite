@@ -10,3 +10,4 @@ export function Dashboard() {
             <section className={Style.mainbar}>
                 <img src={ProfileImage} alt="User's Profile IMG" />
                 <h1>Nickname</h1>
+                <div className={Style.configurations}>
