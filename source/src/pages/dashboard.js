@@ -11,3 +11,4 @@ export function Dashboard() {
                 <img src={ProfileImage} alt="User's Profile IMG" />
                 <h1>Nickname</h1>
                 <div className={Style.configurations}>
+                    <Link className={Style.config_links} to="/">
