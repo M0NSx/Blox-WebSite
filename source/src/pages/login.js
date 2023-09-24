@@ -1,4 +1,4 @@
-import Style from './LogIn.module.css'
+import Style from './login.module.css'
 import React, { useState } from "react";
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
@@ -27,9 +27,11 @@ export function LogIn() {
                 navigate("/dashboard");
             })
             .catch(function (error) {
-                console.log(error, 'error');
+                console.log(error);
                 if (error.response.status === 401) {
                     alert("Invalid Credentials");
+                } else {
+                    alert("An error occurred while logging in");
                 }
             });
         }
@@ -40,7 +42,7 @@ export function LogIn() {
         <section className={Style.section}>
             <div className={Style.login_box}>
                 <form>
-                    <h2>Login</h2>
+                    <h2 id={Style.login_title}>Login</h2>
                     <div className={Style.input_box}>
                         <span className={Style.icon}>
                             <ion-icon name="mail"></ion-icon>
@@ -59,13 +61,9 @@ export function LogIn() {
                     <div className={Style.register_link}>
                         <p className={Style.dont_acc}>Dont have an account? <Link className="to_register" to='/CreateAccount'>Register</Link></p>
                     </div>
-                    </div>
                 </form>
             </div>
         </section>
-
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </>
     )
 }
