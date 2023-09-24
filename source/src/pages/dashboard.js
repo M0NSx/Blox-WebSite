@@ -8,3 +8,4 @@ export function Dashboard() {
         <>
         <aside className={Style.header}>
             <section className={Style.mainbar}>
+                <img src={ProfileImage} alt="User's Profile IMG" />
