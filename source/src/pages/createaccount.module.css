@@ -1,4 +1,4 @@
-section {
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ section {
     animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
-h2 {
+#create_title {
     font-size: 2rem;
     color: #fff;
     text-align: center;
@@ -100,13 +100,13 @@ h2 {
     margin: 25px 0 10px;
 }
 
-.register_link p a {
+.register_link .have_acc .to_login {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register_link p a:hover {
+.register_link .have_acc .to_login:hover {
     text-decoration: underline;
 }
 
