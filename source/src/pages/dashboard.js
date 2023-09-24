@@ -7,3 +7,4 @@ export function Dashboard() {
     return (
         <>
         <aside className={Style.header}>
+            <section className={Style.mainbar}>
